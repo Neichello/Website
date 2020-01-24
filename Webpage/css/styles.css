@@ -1,47 +1,31 @@
-* {
-  font-family: Source Sans Pro;
-  font-weight: 400;
-}
-body{
-  padding: 0;
-  background: #f1f1f1;
-}
-#wrapper {
-  word-wrap: break-word;
-  overflow: hidden;
+button {
+  border: none;
+  padding: 4px;
+  background-color: #69a9d1;
+  color: white;
+  width: 150px;
+  transition: all 200ms ease-in-out;
 }
 .container {
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-around;
 }
-.btn{
-  border: none;
-  margin: 20px;
-  position: relative;
-  padding: 24px;
-  width: 220px;
-  font-family: "Source Sans Pro",sans-serif;
-  text-transform: uppercase;
-  border-radius: 6px;
+button:focus {outline:0;}
+button:hover {
+  background-color: #00008b;
+}
+.wrapper {
   cursor: pointer;
-  color: #fff;
-  background-size: 200%;
-  transition: 0.6s
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.btn1{
-  background-image: linear-gradient(to left,#000,#808080,#000);
-}
-.btn2{
-  background-image: linear-gradient(to left,#000,#808080,#000);
-}
-.btn:hover{
-  background-position: right;
-}
-body, html {
-  height: 100;
+body {
+  background-color: #fff;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
 }
